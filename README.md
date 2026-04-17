@@ -34,6 +34,7 @@ LLM structured output의 신뢰성을 높이기 위한 validation pipeline
 - Pydantic schema validation
 - rule-based business validation
 - error-guided retry loop
+- Self-correction을 통해 structured validity 93.2% → 97.7% 개선 (+4.5%p)
 
 Repo  
 https://github.com/CG-Brian/self-correcting-validator
