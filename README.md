@@ -1,54 +1,64 @@
-# 안녕하세요, 정채강입니다.
+# Hi, I'm Chae-Ghang Jeong 👋
 
-LLM 기반 시스템, RAG 파이프라인, 그리고 AI 의사결정 시스템 개발에 관심을 가지고 있습니다.  
-현재 **Rice University Biosciences** 전공으로 재학 중이며, AI 시스템과 데이터 기반 문제 해결을 중심으로 프로젝트를 진행하고 있습니다.
+I'm a **Biosciences student at Rice University** interested in building reliable AI systems at the intersection of **machine learning, language models, and computational biology**.
+
+My work focuses on evaluating AI systems beyond demo-level performance — including **grounding, robustness, classification performance, and decision quality**.
 
 ---
 
-## 주요 프로젝트
+## Featured Projects
 
-### Telecom Ops Decision Agent (Snowflake Hackathon)
-통신/렌탈 도메인에서 마케팅, 퍼널, CS 데이터를 통합해 의사결정을 지원하는 AI 에이전트
+### StageGround — Source-Boundary-Aware TNM Extraction
 
-- Snowflake Cortex Analyst / Complete, Snowpark 기반 멀티 도메인 의사결정 시스템 구현
-- CVR + Revenue 기반 rule-based scoring과 LLM synthesis를 결합해 실행 가능한 인사이트 생성
-- Top-1 Accuracy, Hallucination Rate, CVR/Revenue uplift 기반 evaluation framework 설계
+An evaluation framework for studying how prompting and structured constraints affect clinical information extraction from pathology reports.
 
-Repo  
+* Evaluated multiple LLM extraction strategies on **TCGA pathology reports** for T/N/M staging
+* Designed schema-guided extraction with explicit evidence spans and abstention behavior
+* Measured not only classification accuracy, but also **unsupported predictions, grounding quality, and source-boundary awareness**
+* Built automated evaluation and human-audit pipelines for evidence and semantic support
+
+**Focus:** Clinical NLP · LLM Evaluation · Structured Extraction · Grounding
+
+Repo
+[StageGround repository]
+
+### Viral Genomic Classifier
+
+A machine learning project for classifying viral genomic sequences from biological sequence data.
+
+* Built an end-to-end pipeline for genomic sequence preprocessing, feature extraction, training, and evaluation
+* Explored sequence-based representations for viral classification
+* Evaluated model performance across biologically meaningful classes rather than relying on aggregate accuracy alone
+* Designed the project around reproducibility and extension to computational biology workflows
+
+**Focus:** Machine Learning · Genomics · Bioinformatics · Model Evaluation
+
+Repo
+[Viral Genomic Classifier repository]
+
+### Telecom Operations Decision Agent — Snowflake Hackathon
+
+An AI decision-support system that combines marketing, funnel, and customer-support data to prioritize operational actions.
+
+* Built a multi-domain reasoning pipeline using **Snowflake Cortex Analyst, Cortex Complete, and Snowpark**
+* Combined quantitative scoring with LLM synthesis to generate grounded, actionable recommendations
+* Implemented cross-domain evidence extraction, conflict detection, and impact-based action prioritization
+* Evaluated recommendation accuracy, numeric hallucination, and offline business-impact metrics
+
+**Focus:** AI Agents · Decision Systems · Snowflake Cortex · LLM Evaluation
+
+Repo
 https://github.com/CG-Brian/telecom-ops-agent
 
-### Invest-RAG
-SEC 공시 문서를 기반으로 Retrieval 성능을 평가하고 개선하는 RAG 시스템
-
-- FAISS 기반 벡터 검색 (~4,000 chunks)
-- Retrieval 평가 파이프라인 설계 (Recall@k, MRR)
-- LLM reranking을 통한 ranking quality 개선
-
-Repo  
-https://github.com/CG-Brian/invest-rag
-
-
-### Self-Correcting Validator
-LLM structured output의 신뢰성을 높이기 위한 validation pipeline
-
-- Pydantic schema validation
-- rule-based business validation
-- error-guided retry loop
-- Self-correction을 통해 structured validity 93.2% → 97.7% 개선 (+4.5%p)
-
-Repo  
-https://github.com/CG-Brian/self-correcting-validator
-
 ---
 
-## 기술 스택
+## Technical Interests
 
-Python  
-LLM API  
-RAG  
-FAISS  
-Retrieval Evaluation  
-Pydantic  
-Snowflake Cortex  
-Snowpark  
-Streamlit
+**AI / ML**
+LLM Systems · Machine Learning · RAG · Evaluation · Structured Generation
+
+**Computational Biology**
+Clinical NLP · Genomics · Biological Data Analysis
+
+**Tools**
+Python · PyTorch · Pydantic · FAISS · Snowflake Cortex · Snowpark · Streamlit
