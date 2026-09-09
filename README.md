@@ -1,4 +1,4 @@
-# Hi, I'm Chae-Ghang Jeong 👋
+# Hi, I'm Brian (Chae-Ghang) Jeong 👋
 
 I'm a **Biosciences student at Rice University** interested in building reliable AI systems at the intersection of **machine learning, language models, and computational biology**.
 
